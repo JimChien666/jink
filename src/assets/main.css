@@ -1,0 +1,27 @@
+@import './base.css';
+
+/* ✅ 讓整頁滿版 + 背景固定黑色，避免露白 */
+html, body, #app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0c;
+}
+
+/* ✅ #app 不要限制寬度、不要置中、不要 padding、不要兩欄 grid */
+#app {
+  min-height: 100%;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-weight: normal;
+}
+
+/* （可選）如果你之後還要用 a 的樣式，保留即可 */
+a {
+  text-decoration: none;
+}
